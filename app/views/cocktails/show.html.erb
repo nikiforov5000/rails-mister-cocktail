@@ -1,7 +1,9 @@
 <div class="container mt-5">
   <div class="col bg-dark">
     <h1 class="text-center pt-5 text-light"><%= @cocktail.name %></h1>
-    <h3>Description:</h3>
-    <h3>Ingredients:</h3>
+    
   </div>
+
+  <%= link_to "Add dose", new_cocktail_dose_path(@cocktail) %>
+
 </div>
